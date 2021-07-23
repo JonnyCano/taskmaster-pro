@@ -1,5 +1,14 @@
 var tasks = {};
 
+// this is just for fun
+// replace the text in the header
+$('header p.mt-auto').on('click', function() {
+  var fuckYou = '<h1 style="text-align: center;">I fucking love it fam</h1>'
+
+  $(this).replaceWith(fuckYou)
+})
+
+
 var createTask = function(taskText, taskDate, taskList) {
   // create elements that make up a task item
   var taskLi = $("<li>").addClass("list-group-item");
